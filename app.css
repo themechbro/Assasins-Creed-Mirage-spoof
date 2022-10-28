@@ -292,7 +292,7 @@ flex-direction: row;
 
 
 /*MediaQUERIES*/
-@media (max-width:768px){
+@media (max-width:800px){
 .global-footer, .mirage-content{
     flex-direction: column;   
 }
