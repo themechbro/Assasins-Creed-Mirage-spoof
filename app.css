@@ -331,3 +331,6 @@ flex-direction: row;
     color: #b65f38;
     transition: all 0.5s;
 }
+.third-frame i{
+    font-size: 4rem;
+}
