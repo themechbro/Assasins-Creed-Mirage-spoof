@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/91a1f38d53.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>Assasins Creed</title>
+</head>
+<body>
+    <!--Fixed-top-Nav-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <a href="#" class="navbar-brand">
+        <div class="container">
+        <img src="data:image/png;base64,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" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav1">
+    <div class="navbar-nav one ms-auto">
+        <div class="nav-item"><a href="#" class="nav-link text-light">Play</a></div>
+        <div class="nav-item"><a href="#" class="nav-link text-light">Shop</a></div>
+        <div class="nav-item"><a href="#" class="nav-link text-light">Explore</a></div>
+        <div class="nav-item"><a href="#" class="nav-link text-light">Help</a></div>
+    </div>
+    <div class="navbar-nav two m-auto">
+        <div class="nav-item"><a href="#" class="nav-link"><i class="fa-sharp fa-solid fa-magnifying-glass text-light"></i></a></div>
+        <div class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user text-light"></i></a></div>
+    </div>
+    </div>
+    </div>
+    </nav>
+
+    <!--Sticky-navbar-->
+
+    <nav class="navbar navbar-expand-lg sticky-top second-nav fixed-top">
+       <div class="container">
+        <a href="#" class="navbar-brand second-brand">
+            <img class="image" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/NiMbT40h7PK9AXDPlcpFY/774ac68dea89df04a1cfe3866e1817fb/ACM-White-Orange-crest-v1.png" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav2">
+        <div class="navbar-nav m-auto ">
+            <div class="nav-item"><a href="#" class="nav-link second-nav-link">News</a></div>
+            <div class="nav-item"><a href="#" class="nav-link second-nav-link ">Game Info</a></div>
+            <div class="nav-item"><a href="#" class="nav-link second-nav-link">Community</a></div>
+            <div class="nav-item"><a href="#" class="nav-link second-nav-link">Franchise</a></div>
+            <div class="nav-item"><a href="#" class="nav-link second-nav-link">Help</a></div>
+        </div>
+         <div class="navbar-nav">
+            <button class="btn btn-lg bg-warning">Pre-Order</button>
+         </div></div> </div>
+    </nav>
+    
+<section class="first-frame">
+<div class="video">
+    <video class="looping-video" id="true" autoplay="true" type="video/mp4" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4muOvHHMDCioJdD5XyZaUL/1d971383123ce279ba14ea008c9936a3/VS48360_ACR_ANNOUNCE_CGI_TRAILER_WEB_LOOP_090822.mp4"></video>
+     <button class="btn btn-sm bg-warning">Watch Trailer</button>
+     <div class="availability">
+       <p class="block-quote text-light mt-5 text-center ms-5">
+        Coming in 2023 to Xbox Series X|S, Xbox One, PlayStation®5, PlayStation®4, EPIC, PC, and Amazon Luna.
+       </p>
+     </div>
+</div></section>
+
+<section class="second-frame">
+ <div class="about-game mt-5">
+    <h4 class="display-5 text-dark text-center">About the Game</h4>
+    <p class="lead text-dark  text-center ">
+        In Assassin's Creed Mirage, you are Basim, a cunning street thief with nightmarish visions seeking answers and justice.
+    </p>
+    <p class="lead text-dark  text-center">
+        Join an ancient organization and come to understand a new creed – one that will change Basim’s fate in ways he never could have imagined.
+    </p>
+ </div>
+<!--First Card-->
+<div class="container">
+ <div class="first-card mt-5">
+    <div class="row">
+        <div class=" col-12 col-md-8 ms-auto">
+            <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6yhBCHftPUgmIbQrkIo95s/9b38883984c66d3409c9356fecad0035/acm-parcour-climb.jpg" alt="" loading="lazy">
+        </div>
+        <div class="col-12 col-md-3 text-center card-text">
+            <h2 class="display-5">
+                A POWERFUL COMING-OF-AGE STORY
+            </h2>
+            <p class="lead">
+                Discover a narrative-driven action-adventure experience that follows the transformation of a defiant young man into a refined Master Assassin with a conflicted destiny. Meet an inspiring cast of characters who will shape Basim’s destiny and may be more than what they seem…
+            </p>
+        </div>
+        <div class="col-12 col-md-1"></div>
+    </div>
+</div>
+<!--Second card-->
+ <div class="second-card mt-5">
+    <div class="row">
+        <div class="col-12 col-md-3 text-center card-text ms-auto">
+            <h2 class="display-5">
+                THE ULTIMATE ASSASSIN
+            </h2>
+            <p class="lead">
+                Become the most versatile Assassin in franchise history. Parkour seamlessly through the city and leverage the largest assortment of tools to date. Get contracts at the Assassin’s bureaus, collect vital clues, and stealthily take down targets with more visceral assassinations than ever before.
+            </p>
+        </div>
+        <div class="col-12 col-md-8">
+            <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3T0WGmslounugmInajaqFZ/37c897a595e151ea7fca67bef5bf7276/acm-stealth.jpg" alt="" loading="lazy">
+        </div>
+        
+        <div class="col-12 col-1"></div>
+    </div>
+ </div>
+<!--Third Card-->
+<div class="first-card mt-5 ">
+    <div class="row">
+        <div class="col-12 col-md-8 ms-auto">
+            <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Bx3f9isII2XAKLU1uD5EB/e41d7d22924be10a8c8f35f5fb27765d/acm-bagdad-vista.jpg" alt="" loading="lazy">
+        </div>
+        <div class="col-12 col-md-3 text-center card-text">
+            <h2 class="display-5">
+                AN IMMERSIVE, REACTIVE CITY
+            </h2>
+            <p class="lead">
+                Explore a dense and vibrant city whose inhabitants react to your every move. Uncover the secrets of four unique districts, from the industrial Karkh to the lush gardens of the Round City. Discover surprising world events and interact with historical figures that shaped the Golden Age of Baghdad.
+
+            </p>
+        </div>
+        <div class="col-12 col-1"></div>
+    </div>
+</div>
+
+ <!--Fourth Card-->
+
+ <div class="second-card mt-5">
+    <div class="row">
+        <div class=" col-12 col-md-3 text-center card-text ms-auto">
+            <h2 class="display-5">
+                A TRIBUTE TO AN ORIGINAL
+            </h2>
+            <p class="lead">
+                Experience a modern take on the features and gameplay that have defined a franchise for 15 years. Journey to Alamut, the legendary home of the Assassins who laid the foundations of the Creed in this heartfelt homage to the game that started it all.
+
+            </p>
+        </div>
+        <div class="col-12 col-md-8">
+            <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I9DQU537FS7sFLoOuCfzD/3c46e192d38e43ed6f6dc74a68ec323c/acm-alamuth-vista.jpg" alt="" loading="lazy">        </div>
+        
+        <div class=" col-12 col-1"></div>
+    </div>
+ </div>
+</div>
+ <hr class="divider">
+
+ <div class="characters">
+    <h1 class="display-5 mt-3 mb-5 text-center text-dark">CHARACTERS</h1>
+   <div class="row">
+       <div class="col-md-3 col-12 basim mb-md-0 mb-3">
+        <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2HfAdifUxHlZpzufnSyevT/e4d4a597486bb08fb38f77fc47a57769/acm-character-block-Basim.png" alt="" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <h6>BASIM</h6>
+                <p>Originally born in Samarra, Basim lost his mother at a young age and grew up on his own in the streets of Baghdad. Basim admires the Hidden Ones, and dreams of joining them.</p>
+            </div>
+          </div>
+    </div>
+       <div class="col-md-3 col-12 roshan mb-md-0 mb-3">
+        <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/114FjVtNCQrW19OOaV8NZJ/615ffc9ca608f430f5fdeb5346e82a54/acm_character-block-Roshan.png" alt="" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <h6>ROSHAN</h6>
+                 <p>After escaping a life of oppression, Roshan became a master assassin at the Hidden Ones’ stronghold, Alamut. Now, she takes Basim under her wing as her first true apprentice.</p>
+            </div>
+          </div>
+    </div>
+       <div class="col-md-3 col-12 coming mb-md-0 mb-3">
+        <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1oTuKhdUEoBqGv17LJx7BW/a84cf9acf7c98cecf959e465c3176583/acm-Character-Block_Coming-Soon.png" alt="" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <h6>COMING SOON</h6>
+            </div>
+          </div>
+    </div>
+       <div class="col-md-3 col-12 coming mb-md-0 mb-3">
+        <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1oTuKhdUEoBqGv17LJx7BW/a84cf9acf7c98cecf959e465c3176583/acm-Character-Block_Coming-Soon.png" alt="" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <h6>COMING SOON</h6>
+            </div>
+          </div>  
+    </div>
+    
+</div></div>
+
+
+<hr class="divider">
+
+<div class="latest">
+    <h1 class="display-5 mt-3 mb-5 text-center text-dark">LATEST NEWS</h1>
+<div class="row p-3">
+<div class="col-12 col-md-4 ">
+    <img  class="video-link"src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2F3At3Ktjk6FjSmPopRUk2/bfdc3c81e2736ec7b6a8d5a6ffedfcd1/ACRFT_UCS27162_Art_IconicImage_RGB_WW.jpg" alt="" loading="lazy">
+ <h6 class="text-center">ASSASSIN’S CREED MIRAGE TAKES PLAYERS TO NINTH CENTURY BAGHDAD</h6>
+ <p class="lead text-center">Step into the robes of Basim Ibn Ishaq as he grows from amateur thief to master Assassin.</p>
+</div>
+<div class="col-12 col-md-4 video-link">
+    <img class="video-link"src="https://i.ytimg.com/vi/Wlm0bK_alg8/maxresdefault.jpg" alt="Assassin’s Creed: 2022 Showcase | #UbiForward" loading="lazy">
+<h6 class="text-center">ASSASSIN’S CREED: 2022 SHOWCASE | #UBIFORWARD</h6>
+<p class="lead text-center"><a href="#">Watch Now</a></p>
+</div>
+<div class="col-12 col-md-4 video-link">
+    <img class="video-link"src="https://i.ytimg.com/vi/hgRnWQOEWVM/maxresdefault.jpg" alt="Assassin's Creed Mirage: Cinematic World Premiere | #UbiForward" loading="lazy">
+<h6 class="text-center">ASSASSIN'S CREED MIRAGE: CINEMATIC WORLD PREMIERE | #UBIFORWARD</h6>
+<p class="lead text-center"><a href="#">Watch Now</a></p>
+</div>
+</div>
+
+<button class="btn btn-lg btn-warning mb-5">All News</button>
+</div>
+</section>
+
+<section class="third-frame">
+     <div class="preorder-content mt-5 ms-auto mb-5">
+      <h2 class="mt-5 mb-5">PRE-ORDER BONUS </h2>
+         <hr class="mt-5 mb-5">
+      <p class="lead">Play the game on Day 1 and unlock a bonus quest, The Forty Thieves.</p>
+       <button class="btn btn-sm btn-warning mb-5 mt-5">PRE-ORDER</button>
+     </div>
+</section>
+
+<section class="socials">
+<h2 class="h6 text-light pt-2 pb-2 d-none d-md-inline">Visit Other Assassin's Creed Channels</h2>
+<div class="  icons pt-2 pb-2">
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitch"></i>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-instagram"></i></div>
+</section>
+
+
+<footer class="global-footer">
+    <div class="ubi-footer bg-dark">
+        <div class="ubi-logo-footer">
+            <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5RMQ9vwghls0An4wzhKtz7/d2f9af89354d87f10980979ef375b4e0/footer_logo.png" alt="" loading="lazy">
+        </div>
+
+        <div class="ubi-links">
+            <a href="#">STORE</a>
+            <a href="#">UBISOFT CONNECT</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">NEWS</a>
+            <a href="#">SUPPORT</a>
+        </div>
+         
+        <div class="ubi-legal">
+            <a href="#">CONTACT US</a>
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS OF USE</a>
+            <a href="#">DO NOT SELL MY DATA</a>
+            <a href="#">SET COOKIES</a>
+        </div>
+    </div>
+
+
+    <div class="mirage-footer">
+      <div class="mirage-logo mb-5">
+        <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/NiMbT40h7PK9AXDPlcpFY/774ac68dea89df04a1cfe3866e1817fb/ACM-White-Orange-crest-v1.png" alt="" loading="lazy">
+      </div>
+
+      <div class="mirage-content">
+         <div class="mirage-studio">
+            <span class="text-light ">Studios</span>
+            <a href="#">UBISOFT BORDEAUX</a>
+            <a href="#">UBISOFT MONTREAL </a>
+            <a href="#">UBISOFT MONTPELLIER</a>
+            <a href="#">UBISOFT SOFIA</a>
+            <a href="#">UBISOFT KYIV</a>
+            <a href="#">UBISOFT ODESA</a>
+            <a href="#">UBISOFT SINGAPORE</a>
+            <a href="#">UBISOFT BUCHAREST</a>
+         </div>
+         <div class="mirage-plat">
+            <span class="text-light">Platforms</span>
+            <a href="#">PLAYSTATION 5</a>
+            <a href="#">PLAYSTATION 4 </a>
+            <a href="#">XBOX SERIES X|S</a>
+            <a href="#">XBOX ONE</a>
+            <a href="#">UBISOFT CONNECT</a>
+            <a href="#">LUNA</a>
+            <a href="#">EPIC GAMES</a>
+         </div>
+           </div>
+
+           <p class="lead text-light mt-5">&copy; 2022 Ubisoft Entertainment. All Rights Reserved. Assassin’s Creed, Ubisoft, and the Ubisoft logo are registered or unregistered trademarks of Ubisoft Entertainment in the US and/or other countries.</p>
+</div>
+</footer>
+
+<script>
+  $(function(){
+        $(document).scroll(function(){
+          var $nav= $(".second-nav");
+          $nav.toggleClass("sticky-top", $(this).scrollTop()<100);
+          $nav.toggleClass("fixed-top", $(this).scrollTop()>100);
+        });
+      });
+
+</script>
+</body>
+</html>
