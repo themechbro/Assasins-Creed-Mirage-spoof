@@ -57,7 +57,7 @@ body, html{
 
 .second-frame{
     border-top: 2px solid #FFF;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.663), rgba(255, 255, 255, 0.608)),url("https://images.unsplash.com/photo-1531816599696-8e0c46abbe67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3xVclhpbDEyZHMzd3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: linear-gradient(rgba(160, 134, 134, 0.663), rgba(236, 209, 209, 0.608)),url("https://images.unsplash.com/photo-1531816599696-8e0c46abbe67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3xVclhpbDEyZHMzd3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
     width:100%;
     background-attachment: fixed;
    /* opacity: 0.9;*/
@@ -366,4 +366,18 @@ height: 60%;
 .navbar-nav button a, .preorder-content button a{
 text-decoration: none;
 color: #000;
+}
+.characters h1, .latest h1, .first-card h2, .second-card h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 900;
+text-transform: uppercase;
+text-decoration: underline;
+}
+.first-card h2, .second-card h2{
+    text-decoration: none;
+}
+
+.first-card p, .second-card p, .preorder-content p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }
