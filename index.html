@@ -70,8 +70,20 @@
 <section class="first-frame">
 <div class="video">
     <video class="looping-video" id="true" controls autoplay playsinline loop type="video/mp4" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4muOvHHMDCioJdD5XyZaUL/1d971383123ce279ba14ea008c9936a3/VS48360_ACR_ANNOUNCE_CGI_TRAILER_WEB_LOOP_090822.mp4"></video>
-     <button class="btn btn-sm bg-warning mt-n5" onclick="buttonClick()">
-       <a href="https://www.youtube.com/watch?v=x55lAlFtXmw"> Watch Trailer</a></button>
+     <button class="btn btn-sm bg-warning mt-n5" onclick="buttonClick()" id="liveToastBtn">
+       <a href="https://www.youtube.com/watch?v=x55lAlFtXmw" loading="lazy"> Watch Trailer</a></button>
+       <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Hello!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            You are redirected to Youtube! 
+          </div>
+        </div>
+      </div>
+
      <div class="availability">
        <p class="block-quote text-light mt-5 text-center ms-5">
         Coming in 2023 to Xbox Series X|S, Xbox One, PlayStation®5, PlayStation®4, EPIC, PC, and Amazon Luna.
