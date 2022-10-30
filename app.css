@@ -59,7 +59,7 @@ body, html{
     border-top: 2px solid #FFF;
     background-image: linear-gradient(rgba(160, 134, 134, 0.663), rgba(236, 209, 209, 0.608)),url("https://images.unsplash.com/photo-1531816599696-8e0c46abbe67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3xVclhpbDEyZHMzd3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
     width:100%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
    /* opacity: 0.9;*/
     display: flex;
     flex-direction: column;
@@ -316,7 +316,7 @@ flex-direction: row;
     background-position: center;
     background-size: none;
 }
-.first-frame, .second-frame, .third-frame{
+.first-frame,.third-frame{
     background-attachment: fixed;
 }
 .video button{
