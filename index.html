@@ -63,13 +63,25 @@
             <div class="nav-item"><a href="#" class="nav-link second-nav-link">Help</a></div>
         </div>
          <div class="navbar-nav">
-            <button class="btn btn-lg bg-warning" onclick="preOrder()"><a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage/buy"> Pre-Order </a></button>
+            <button class="btn btn-lg bg-warning" onclick="preOrder()" id="livePreorderToastBtn"><a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage/buy"> Pre-Order </a></button>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="livePreorderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <strong class="me-auto">Hello!</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    You are redirected to Ubisoft's Buy Page! 
+                  </div>
+                </div>
+              </div>
+
          </div></div> </div>
     </nav>
     
 <section class="first-frame">
 <div class="video">
-    <video class="looping-video" id="true" controls autoplay playsinline loop type="video/mp4" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4muOvHHMDCioJdD5XyZaUL/1d971383123ce279ba14ea008c9936a3/VS48360_ACR_ANNOUNCE_CGI_TRAILER_WEB_LOOP_090822.mp4"></video>
+    <video class="looping-video" autostart="true" id="true" controls autoplay playsinline loop type="video/mp4" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4muOvHHMDCioJdD5XyZaUL/1d971383123ce279ba14ea008c9936a3/VS48360_ACR_ANNOUNCE_CGI_TRAILER_WEB_LOOP_090822.mp4"></video>
      <button class="btn btn-sm bg-warning mt-n5" onclick="buttonClick()" id="liveToastBtn">
        <a href="https://www.youtube.com/watch?v=x55lAlFtXmw" loading="lazy"> Watch Trailer</a></button>
        <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -241,9 +253,12 @@
 <h6 class="text-center">ASSASSIN'S CREED MIRAGE: CINEMATIC WORLD PREMIERE | #UBIFORWARD</h6>
 <p class="lead text-center"><a href="#">Watch Now</a></p>
 </div>
+
+
 </div>
 
 <button class="btn btn-lg btn-warning mb-5">All News</button>
+
 </div>
 </section>
 
@@ -254,7 +269,19 @@
       <h2 class="mt-4 mb-4">PRE-ORDER BONUS </h2>
          <hr class="mt-2 mb-5">
       <p class="lead">Play the game on Day 1 and unlock a bonus quest, The Forty Thieves.</p>
-       <button class="btn btn-sm btn-warning mb-5 mt-5" onclick="preOrder()"><a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage/buy" >PRE-ORDER</a></button>
+       <button class="btn btn-sm btn-warning mb-5 mt-5" onclick="preOrder()" id="livePreorderToastBtn"><a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage/buy" >PRE-ORDER</a></button>
+       <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="livePreorderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Hello!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            You are redirected to Ubisoft's Buy Page! 
+          </div>
+        </div>
+      </div>
+
      </div>
 </section>
 
@@ -345,8 +372,6 @@
 
 </div>
   
-  
-
 </div>
 </footer>
 
